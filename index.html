@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple password generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>
+        Matthew's Simple Password Generator
+    </h1>
+    <div>
+        <p>
+            Welcome to Matthew's simple password generator. <br>
+            In order to obtain a secure password the generation algorithm must contain atleast 3 of the generation options listed below. <br>
+            By default you are required to include the 26-character alphabet of lower-case letters and the 26-character alphabet of upper-case letters. <br>
+            Next, you must choose up to 4 of the options for password generation by checking the boxes accordingly. <br>
+            Lastly, you must choose the length of which the password will be, the minimum value for this is 10, the maximum value is 32. <br>
+            Once done click the "Generate" button to populate the output. <br>
+        </p>
+    </div>
+
+    <div>
+        <input type="checkbox" id="option1" value="numbers"> Numbers [0,1,2,...,7,8,9] <br>
+        <input type="checkbox" id="option2" value="numberSymbols"> Number Symbols [!,@,#,$,%,^,&,*,(,)] <br>
+        <input type="checkbox" id="option3" value="sectionOneSymbols"> SectionOne Symbols [`,,,.,/,;,’,[,],-,=] <br>
+        <input type="checkbox" id="option4" value="sectionTwoSymbols"> SectionTwo Symbols [~,<,>,?,:,{,},|,_,+] <br>
+    </div>
+    <div>
+        <br> Please enter the length of the password:<input type="number" id="length" min="10" max="32" value="16"> 
+    </div>
+    <div>
+        <button id="generate"> Generate</button> <br>
+    </div>
+    <div id="output" class="label">
+        <br>
+    </div>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
